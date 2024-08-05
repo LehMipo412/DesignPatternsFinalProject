@@ -452,7 +452,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 108201727}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1992743467}
+        m_TargetAssemblyTypeName: TurnHandler, Assembly-CSharp
+        m_MethodName: PlayAndPassTurn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &170518827
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +585,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 170518829}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1992743467}
+        m_TargetAssemblyTypeName: TurnHandler, Assembly-CSharp
+        m_MethodName: PlayAndPassTurn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &205832445
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,7 +718,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 205832447}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1992743467}
+        m_TargetAssemblyTypeName: TurnHandler, Assembly-CSharp
+        m_MethodName: PlayAndPassTurn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &219658831
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,7 +851,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 219658833}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1992743467}
+        m_TargetAssemblyTypeName: TurnHandler, Assembly-CSharp
+        m_MethodName: PlayAndPassTurn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &668961597
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,7 +984,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 668961599}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1992743467}
+        m_TargetAssemblyTypeName: TurnHandler, Assembly-CSharp
+        m_MethodName: PlayAndPassTurn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &735277965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,7 +1117,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 735277967}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1992743467}
+        m_TargetAssemblyTypeName: TurnHandler, Assembly-CSharp
+        m_MethodName: PlayAndPassTurn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &763695776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,7 +1164,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -24.9, y: -186.7}
+  m_AnchoredPosition: {x: -24.9, y: -186.70001}
   m_SizeDelta: {x: 1513.8, y: 373.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &763695778
@@ -2001,7 +2073,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1190084303}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1992743467}
+        m_TargetAssemblyTypeName: TurnHandler, Assembly-CSharp
+        m_MethodName: PlayAndPassTurn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1281238719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2122,7 +2206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1281238721}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1992743467}
+        m_TargetAssemblyTypeName: TurnHandler, Assembly-CSharp
+        m_MethodName: PlayAndPassTurn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1343630147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2185,7 +2281,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1343630149}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1992743467}
+        m_TargetAssemblyTypeName: TurnHandler, Assembly-CSharp
+        m_MethodName: PlayAndPassTurn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1343630149
 MonoBehaviour:
   m_ObjectHideFlags: 0
