@@ -11,12 +11,16 @@ public class SpriteSwapper : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void SwapImageToX(int index)
     {
-        buttonsContainer.buttonArray[index].image.sprite = XSpriteToChange;
+        var selectedButton = buttonsContainer.buttonArray[index];
+        selectedButton.image.sprite = XSpriteToChange;
+        selectedButton.interactable = false;
     }
 
     public void SwapImageToO(int index)
     {
-        buttonsContainer.buttonArray[index].image.sprite = OSpriteToChange;
+        var selectedButton = buttonsContainer.buttonArray[index];
+        selectedButton.image.sprite = OSpriteToChange;
+        selectedButton.interactable = false;
     }
 
 

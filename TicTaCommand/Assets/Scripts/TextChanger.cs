@@ -6,7 +6,7 @@ public class TextChanger : MonoBehaviour
     [SerializeField] TMP_Text textToChange;
     private char winner;
     private const string XTurn = "The Player Commanding <color=red>X</color>'s Turn";
-    private const string OTurn = "The Player Commanding <color=red>O</color>'s Turn";
+    private const string OTurn = "The Player Commanding <color=blue>O</color>'s Turn";
     private string winnerDecleration = $"The Winner Is The Player Commanding: ";
 
 
