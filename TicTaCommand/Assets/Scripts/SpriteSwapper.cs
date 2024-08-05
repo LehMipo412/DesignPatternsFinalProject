@@ -13,6 +13,7 @@ public class SpriteSwapper : MonoBehaviour
     {
         var selectedButton = buttonsContainer.buttonArray[index];
         selectedButton.image.sprite = XSpriteToChange;
+        selectedButton.image.color = Color.white;
         selectedButton.interactable = false;
     }
 
@@ -20,6 +21,7 @@ public class SpriteSwapper : MonoBehaviour
     {
         var selectedButton = buttonsContainer.buttonArray[index];
         selectedButton.image.sprite = OSpriteToChange;
+        selectedButton.image.color = Color.white;
         selectedButton.interactable = false;
     }
 
