@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class TurnHandler : MonoBehaviour
 {
+    [SerializeField] Judge _judge;
     private bool isXTurn = true;
-    [SerializeField] SpriteSwapper _spriteSwapper;
-    [SerializeField] TextChanger _textChanger;
+    public SpriteSwapper _spriteSwapper;
+    public TextChanger _textChanger;
 
 
     public void PlayAndPassTurn(int index)
@@ -14,12 +15,14 @@ public class TurnHandler : MonoBehaviour
             _spriteSwapper.SwapImageToX(index);
             isXTurn = false;
             _textChanger.PassTurnToO();
+            _judge.CheckIfWinner();
         }
         else
         {
             _spriteSwapper.SwapImageToO(index);
             isXTurn = true;
             _textChanger.PassTurnToX();
+            _judge.CheckIfWinner();
         }
     }
    

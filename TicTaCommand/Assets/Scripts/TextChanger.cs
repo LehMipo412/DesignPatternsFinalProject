@@ -30,12 +30,18 @@ public class TextChanger : MonoBehaviour
         if(winnerID == 0)
         {
             winner = 'X';
-            winnerDecleration += winner;
+            winnerDecleration += $"<color=red>{winner}</color>";
+            textToChange.text = winnerDecleration;
         }
         if (winnerID == 1)
         {
             winner = 'O';
-            winnerDecleration += winner;
+            winnerDecleration += $"<color=blue>{winner}</color>";
+            textToChange.text = winnerDecleration;
+        }
+        if(winnerID ==-1)
+        {
+            winnerDecleration = "Its A Tie!";
         }
     }
 }

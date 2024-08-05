@@ -4,9 +4,9 @@ using UnityEngine.UI;
 public class SpriteSwapper : MonoBehaviour
 {
 
-    [SerializeField] ButtonArrayHandler buttonsContainer;
-    [SerializeField] Sprite XSpriteToChange;
-    [SerializeField] Sprite OSpriteToChange;
+    public ButtonArrayHandler buttonsContainer;
+    public Sprite XSpriteToChange;
+    public Sprite OSpriteToChange;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void SwapImageToX(int index)
