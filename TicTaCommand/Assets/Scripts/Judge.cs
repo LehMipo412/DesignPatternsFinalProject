@@ -17,6 +17,7 @@ public class Judge : MonoBehaviour
             arrayRef[0].image.color = Color.yellow;
             arrayRef[1].image.color = Color.yellow;
             arrayRef[2].image.color = Color.yellow;
+            return;
         }
 
         if (arrayRef[0].image.sprite == oSpriteRef && arrayRef[1].image.sprite == oSpriteRef && arrayRef[2].image.sprite == oSpriteRef)
@@ -25,6 +26,7 @@ public class Judge : MonoBehaviour
             arrayRef[0].image.color = Color.yellow;
             arrayRef[1].image.color = Color.yellow;
             arrayRef[2].image.color = Color.yellow;
+            return;
         }
 
         for (int i = 3; i < arrayRef.Length; i++)
@@ -37,6 +39,7 @@ public class Judge : MonoBehaviour
                     arrayRef[i].image.color = Color.yellow;
                     arrayRef[i + 1].image.color = Color.yellow;
                     arrayRef[i + 2].image.color = Color.yellow;
+                    return;
                 }
                 if (arrayRef[i].image.sprite == oSpriteRef && arrayRef[i + 1].image.sprite == oSpriteRef && arrayRef[i + 2].image.sprite == oSpriteRef)
                 {
@@ -44,6 +47,7 @@ public class Judge : MonoBehaviour
                     arrayRef[i].image.color = Color.yellow;
                     arrayRef[i + 1].image.color = Color.yellow;
                     arrayRef[i + 2].image.color = Color.yellow;
+                    return;
                 }
             }
 
@@ -56,6 +60,7 @@ public class Judge : MonoBehaviour
                 arrayRef[i].image.color = Color.yellow;
                 arrayRef[i + 3].image.color = Color.yellow;
                 arrayRef[i + 6].image.color = Color.yellow;
+                return;
             }
             if (arrayRef[i].image.sprite == oSpriteRef && arrayRef[i + 3].image.sprite == oSpriteRef && arrayRef[i + 6].image.sprite == oSpriteRef)
             {
@@ -63,6 +68,7 @@ public class Judge : MonoBehaviour
                 arrayRef[i].image.color = Color.yellow;
                 arrayRef[i + 3].image.color = Color.yellow;
                 arrayRef[i + 6].image.color = Color.yellow;
+                return;
             }
         }
         if (arrayRef[0].image.sprite == xSpriteRef && arrayRef[4].image.sprite == xSpriteRef && arrayRef[8].image.sprite == xSpriteRef)
@@ -71,6 +77,7 @@ public class Judge : MonoBehaviour
             arrayRef[0].image.color = Color.yellow;
             arrayRef[4].image.color = Color.yellow;
             arrayRef[8].image.color = Color.yellow;
+            return;
         }
         if (arrayRef[2].image.sprite == xSpriteRef && arrayRef[4].image.sprite == xSpriteRef && arrayRef[6].image.sprite == xSpriteRef)
         {
@@ -78,6 +85,7 @@ public class Judge : MonoBehaviour
             arrayRef[2].image.color = Color.yellow;
             arrayRef[4].image.color = Color.yellow;
             arrayRef[6].image.color = Color.yellow;
+            return;
         }
         if (arrayRef[0].image.sprite == oSpriteRef && arrayRef[4].image.sprite == oSpriteRef && arrayRef[8].image.sprite == oSpriteRef)
         {
@@ -85,6 +93,7 @@ public class Judge : MonoBehaviour
             arrayRef[0].image.color = Color.yellow;
             arrayRef[4].image.color = Color.yellow;
             arrayRef[8].image.color = Color.yellow;
+            return;
         }
         if (arrayRef[2].image.sprite == oSpriteRef && arrayRef[4].image.sprite == oSpriteRef && arrayRef[6].image.sprite == oSpriteRef)
         {
@@ -92,6 +101,7 @@ public class Judge : MonoBehaviour
             arrayRef[2].image.color = Color.yellow;
             arrayRef[4].image.color = Color.yellow;
             arrayRef[6].image.color = Color.yellow;
+            return;
         }
         if(turnHandler.availableTiles == 1)
         {
