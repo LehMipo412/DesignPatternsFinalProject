@@ -6,16 +6,22 @@ public class TurnHandler : MonoBehaviour
     private bool isXTurn = true;
     public SpriteSwapper _spriteSwapper;
     public TextChanger _textChanger;
+    public int availableTiles = 9;
 
 
     public void PlayAndPassTurn(int index)
     {
+        if(availableTiles==1)
+        {
+
+        }
         if(isXTurn)
         {
             _spriteSwapper.SwapImageToX(index);
             isXTurn = false;
             _textChanger.PassTurnToO();
             _judge.CheckIfWinner();
+            availableTiles--;
         }
         else
         {
@@ -23,6 +29,7 @@ public class TurnHandler : MonoBehaviour
             isXTurn = true;
             _textChanger.PassTurnToX();
             _judge.CheckIfWinner();
+            availableTiles--;
         }
     }
    

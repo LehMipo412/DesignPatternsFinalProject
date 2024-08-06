@@ -1812,6 +1812,7 @@ GameObject:
   - component: {fileID: 1992743467}
   - component: {fileID: 1992743464}
   - component: {fileID: 1992743466}
+  - component: {fileID: 1992743469}
   - component: {fileID: 1992743463}
   m_Layer: 0
   m_Name: GameManager
@@ -1885,6 +1886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToChange: {fileID: 763695778}
+  _boardDeactivator: {fileID: 1992743469}
 --- !u!114 &1992743467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1913,6 +1915,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnHandler: {fileID: 1992743467}
+--- !u!114 &1992743469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992743462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3d706283ba144449bdcb2fc7df8b29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonArrayHandler: {fileID: 1992743463}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

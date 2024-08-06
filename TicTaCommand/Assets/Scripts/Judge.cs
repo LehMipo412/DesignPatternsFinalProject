@@ -93,6 +93,9 @@ public class Judge : MonoBehaviour
             arrayRef[4].image.color = Color.yellow;
             arrayRef[6].image.color = Color.yellow;
         }
-
+        if(turnHandler.availableTiles == 1)
+        {
+            turnHandler._textChanger.DeclareWinner(-1);
+        }
     }
 }
