@@ -48,7 +48,7 @@ public class Judge : MonoBehaviour
             }
 
         }
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i <= 2; i++)
         {
             if (arrayRef[i].image.sprite == xSpriteRef && arrayRef[i + 3].image.sprite == xSpriteRef && arrayRef[i + 6].image.sprite == xSpriteRef)
             {
