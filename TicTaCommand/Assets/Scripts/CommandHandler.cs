@@ -13,7 +13,7 @@ public abstract class AbstractAction
         turnHandlerAsCommand = inputedTurnHandler;
     }
 
-    public void Execute()
+    public virtual void Execute()
     {
 
     }
@@ -29,7 +29,7 @@ public class PassTurnCommand :AbstractAction
     {
         buttonIndex = index;
     }
-    public void Execute()
+    public override void Execute()
     {
         turnHandlerAsCommand.PlayAndPassTurn(buttonIndex);
     }
@@ -46,7 +46,7 @@ public class UndoCommand : AbstractAction
     {
         buttonIndex = index;
     }
-    public void Execute()
+    public override void Execute()
     {
         turnHandlerAsCommand.TurnUndo(buttonIndex);
     }
@@ -62,9 +62,9 @@ public class RedoCommand : AbstractAction
     {
         buttonIndex = index;
     }
-    public void Execute()
+    public override void Execute()
     {
-        turnHandlerAsCommand.TurnUndo(buttonIndex);
+        turnHandlerAsCommand.PlayAndPassTurn(buttonIndex);
     }
 
 
@@ -97,9 +97,11 @@ public class CommandHandler : MonoBehaviour
 
     public void PlayRegularTurn(int index)
     {
+       
         Debug.Log(index);
         AbstractAction action = new PassTurnCommand(_turnHandler, index);
         Record(index);
+        Debug.Log(_turnHandler.availableTiles);
         action.Execute();
     }
 
@@ -109,6 +111,15 @@ public class CommandHandler : MonoBehaviour
 
         AbstractAction action = new UndoCommand(_turnHandler, index);
         optionalRedoContainer.Push(index);
+        action.Execute();
+    }
+
+    public void PlayRedoTurn()
+    {
+        int index = optionalRedoContainer.Pop();
+
+        AbstractAction action = new RedoCommand(_turnHandler, index);
+        recordsContaier.Push(index);
         action.Execute();
     }
 

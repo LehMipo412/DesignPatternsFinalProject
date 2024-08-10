@@ -11,7 +11,8 @@ public class TurnHandler : MonoBehaviour
 
 
     public void PlayAndPassTurn(int index)
-    {     
+    {
+        Debug.Log("Deployying Commander...");
             if (availableTiles == 1)
             {
 
