@@ -30,9 +30,6 @@ public class GameManager : MonoBehaviour
 
         _eventsContainers.PickUpEvent.AddListener(UpdateScore);
         _eventsContainers.TakeDamageEvent.AddListener(EnemyHitPlayer);
-        
-
-
     }
 
     public void Foo()
