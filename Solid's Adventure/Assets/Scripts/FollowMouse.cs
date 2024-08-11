@@ -14,11 +14,10 @@ public class FollowMouse : MonoBehaviour
         transform.LookAt(playerTransform);
 
         xInputContainer = Input.GetAxis("Mouse X");
-        Debug.Log(xInputContainer);
+       // Debug.Log(xInputContainer);
         yInputContainer = Input.GetAxis("Mouse Y");
 
-        var horizonAngle = transform.localEulerAngles.x;
-        var verticalAngle = transform.localEulerAngles.y;
+        
 
         if (yInputContainer > 180 && xInputContainer < 340)
         {

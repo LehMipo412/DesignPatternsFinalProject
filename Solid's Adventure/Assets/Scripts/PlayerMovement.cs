@@ -4,7 +4,8 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] Camera mainCamera;
     public bool isRunning;
-    public float speed = 5f;
+    public float speed = 5;
+    public Rigidbody playerRB;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
    public void HandleMovement()
     {
@@ -12,9 +13,16 @@ public class PlayerMovement : MonoBehaviour
         {
             isRunning = true;
             // Debug.Log("runing");
+            transform.forward = new Vector3(0, 0, mainCamera.transform.eulerAngles.y);
             transform.eulerAngles = new Vector3(0, mainCamera.transform.eulerAngles.y, 0);
-            transform.Translate(mainCamera.transform.forward * (Time.deltaTime * speed));
-            
+            transform.Translate(Vector3.forward * (Time.deltaTime * speed));
+            //playerRB.MovePosition(Vector3.forward * (Time.deltaTime * speed));
+            // playerRB.MovePosition(new Vector3(transform.position.x,transform.position.y,transform.forward.z+5f));
+            //playerRB.Move((new Vector3(1,0,0) *  speed), new Quaternion(0, 0, mainCamera.transform.eulerAngles.y,0));
+           // playerRB.linearVelocity = Vector3.forward *  speed;
+           // Debug.Log(mainCamera.transform.forward);
+
+
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -25,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
         {
             isRunning = true;
-            transform.Translate(mainCamera.transform.forward* -1 * (Time.deltaTime * speed));
+            transform.Translate(Vector3.back * (Time.deltaTime * speed));
             //transform.eulerAngles = mainCamera.transform.forward * -1 * (Time.deltaTime * speed);
         }
 

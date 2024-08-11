@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    [SerializeField] EventsContainers _eventsContainers;
     [SerializeField] private float PlayerMaxHP;
     private float playerCurrentHP;
 
     private void Start()
     {
         playerCurrentHP = PlayerMaxHP;
+        
     }
 
     public void TakeDamage(float damage)
