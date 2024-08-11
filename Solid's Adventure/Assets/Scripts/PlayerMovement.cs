@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] Camera mainCamera;
     public bool isRunning;
     public float speed = 5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -10,8 +11,10 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             isRunning = true;
-           // Debug.Log("runing");
-            transform.Translate(Vector3.forward * (Time.deltaTime * speed));
+            // Debug.Log("runing");
+            transform.eulerAngles = new Vector3(0, mainCamera.transform.eulerAngles.y, 0);
+            transform.Translate(mainCamera.transform.forward * (Time.deltaTime * speed));
+            
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -22,7 +25,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
         {
             isRunning = true;
-            transform.Translate(Vector3.back * (Time.deltaTime * speed));
+            transform.Translate(mainCamera.transform.forward* -1 * (Time.deltaTime * speed));
+            //transform.eulerAngles = mainCamera.transform.forward * -1 * (Time.deltaTime * speed);
         }
 
         if (Input.GetKey(KeyCode.D))

@@ -5,6 +5,7 @@ public class FollowMouse : MonoBehaviour
     [SerializeField] Transform playerTransform;
     private float xInputContainer;
     private float yInputContainer;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     // Update is called once per frame
@@ -13,32 +14,33 @@ public class FollowMouse : MonoBehaviour
         transform.LookAt(playerTransform);
 
         xInputContainer = Input.GetAxis("Mouse X");
+        Debug.Log(xInputContainer);
         yInputContainer = Input.GetAxis("Mouse Y");
 
         var horizonAngle = transform.localEulerAngles.x;
         var verticalAngle = transform.localEulerAngles.y;
 
-        if (horizonAngle > 180 && horizonAngle < 340)
+        if (yInputContainer > 180 && xInputContainer < 340)
         {
-            horizonAngle = 340;
+            xInputContainer = 340;
 
         }
-        else if (horizonAngle < 180 && horizonAngle > 40)
+        else if (yInputContainer < 180 && xInputContainer > 40)
         {
-            horizonAngle = 40;
+            xInputContainer = 40;
         }
-        if (verticalAngle > 180 && verticalAngle < 340)
+        if (yInputContainer > 180 && xInputContainer < 340)
         {
-            verticalAngle = 340;
+            yInputContainer = 340;
 
         }
-        else if (verticalAngle < 180 && verticalAngle > 40)
+        else if (yInputContainer < 180 && xInputContainer > 40)
         {
-            verticalAngle = 40;
+            yInputContainer = 40;
         }
 
-        transform.localEulerAngles = new Vector3(horizonAngle, verticalAngle, 0);
-        transform.position = playerTransform.position - transform.forward;
+        transform.localEulerAngles += new Vector3(-yInputContainer*5, xInputContainer*5, 0);
+        transform.position = playerTransform.position - transform.forward*5;
 
     }
 }

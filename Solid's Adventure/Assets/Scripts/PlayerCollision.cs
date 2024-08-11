@@ -8,7 +8,7 @@ public class PlayerCollision : MonoBehaviour
         if(collision.gameObject.CompareTag("Pickup"))
         {
 
-            Debug.Log("I Should Notify The Subscribers");
+            Debug.Log("I Should Notify The Subscribers");   
 
         }
         
