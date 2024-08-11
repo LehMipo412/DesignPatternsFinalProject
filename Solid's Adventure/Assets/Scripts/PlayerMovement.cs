@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             isRunning = true;
-            Debug.Log("runing");
+           // Debug.Log("runing");
             transform.Translate(Vector3.forward * (Time.deltaTime * speed));
         }
         if (Input.GetKey(KeyCode.A))
@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
         {
 
             isRunning = false;
-            Debug.Log("Idle");
+           // Debug.Log("Idle");
         }
     }
 }
