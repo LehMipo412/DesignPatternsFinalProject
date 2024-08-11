@@ -75,3 +75,11 @@ crashlytics-build.properties
 /TicTaCommand/Logs
 /TicTaCommand/Logs
 /TicTaCommand/Logs
+/Solid's Adventure/Library
+/Solid's Adventure/Logs
+/TicTaCommand/Logs
+/TicTaCommand/Logs
+/TicTaCommand/Logs
+/Solid's Adventure/Temp
+*.log
+/Solid's Adventure/UserSettings
