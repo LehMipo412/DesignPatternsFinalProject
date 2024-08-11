@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TurnHandler : MonoBehaviour
 {
-    [SerializeField] CommandHandler _commandHandler;
+   // [SerializeField] CommandHandler _commandHandler;
     [SerializeField] Judge _judge;
     private bool isXTurn = true;
     public SpriteSwapper _spriteSwapper;

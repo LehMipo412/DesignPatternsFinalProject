@@ -97,7 +97,7 @@ public class CommandHandler : MonoBehaviour
 
     public void PlayRegularTurn(int index)
     {
-       
+        optionalRedoContainer.Clear();
         Debug.Log(index);
         AbstractAction action = new PassTurnCommand(_turnHandler, index);
         Record(index);
