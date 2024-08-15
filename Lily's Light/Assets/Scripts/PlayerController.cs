@@ -3,6 +3,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] PlayerMovement _playerMovement;
+    //[SerializeField] PlayerCollision _playerCollision;
+    //[SerializeField] HeartBeatManager _heartBeatManager;
     
     
 

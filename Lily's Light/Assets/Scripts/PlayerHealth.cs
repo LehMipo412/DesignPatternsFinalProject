@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] EventsContainers _eventsContainers;
+    [SerializeField] PlayerCollision _playerCollision;
     [SerializeField] SelfLightHandler _lightHandler;
     [SerializeField] private float PlayerMaxHP;
     [SerializeField] float lightModifier;
@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
         playerCurrentHP = PlayerMaxHP;
-        _eventsContainers.PickUpEvent.AddListener(RegainHope);
+       _playerCollision._eventsContainers.PickUpEvent.AddListener(RegainHope);
 
     }
 

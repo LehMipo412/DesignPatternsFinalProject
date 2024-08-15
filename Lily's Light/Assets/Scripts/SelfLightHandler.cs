@@ -9,5 +9,6 @@ public class SelfLightHandler : MonoBehaviour
     public void ShineBrighter(float intensityModifier)
     {
         playerLight.intensity += intensityModifier;
+        playerLight.range += 0.2f;
     }
 }

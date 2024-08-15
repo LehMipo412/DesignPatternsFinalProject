@@ -15,15 +15,19 @@ public class PickupBehaviour : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player") && !canEnter)
+        if (gameObject != null)
         {
-
-            Debug.Log("I Should Notify The Subscribers");
-            _eventsContainers.PickUpEvent.AddListener(JustkillMeAlready);
-            canEnter = true;
-            _eventsContainers.PickUpEvent.Invoke();
             
+            if (collision.gameObject.CompareTag("Player") && !canEnter)
+            {
 
+                Debug.Log("I Should Notify The Subscribers");
+                _eventsContainers.PickUpEvent.AddListener(JustkillMeAlready);
+                canEnter = true;
+                _eventsContainers.PickUpEvent.Invoke();
+
+
+            }
         }
     }
 }

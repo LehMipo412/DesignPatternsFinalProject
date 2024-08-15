@@ -15,7 +15,7 @@ public class EnemyChase : MonoBehaviour
         if (_target != null)
         {
             transform.LookAt(_target.transform);
-            transform.Translate(Vector3.forward * (Time.deltaTime * _speed));
+            transform.Translate(Vector3.forward  * Time.deltaTime* _speed);
         }
     }
 }
