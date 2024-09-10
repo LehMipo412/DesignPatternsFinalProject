@@ -84,3 +84,6 @@ crashlytics-build.properties
 *.log
 /Solid's Adventure/UserSettings
 /Lily's Light/Library
+/Dice Roller/Library
+/Dice Roller/Temp
+/Dice Roller/UserSettings
