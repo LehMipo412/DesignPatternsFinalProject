@@ -2,6 +2,8 @@ using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -65,6 +67,8 @@ public class GameManager : MonoBehaviour
 
     public void OnPlayerDeath()
     {
-        //Game over
+        SceneManager.LoadScene("LoseScreen");
     }
+
+    
 }

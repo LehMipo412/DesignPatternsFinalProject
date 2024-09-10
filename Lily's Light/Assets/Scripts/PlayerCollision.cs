@@ -28,19 +28,30 @@ public class PlayerCollision : MonoBehaviour
         {
             Debug.Log("Enemy collided with player");
             _eventsContainers.TakeDamageEvent.Invoke();
-            _eventsContainers.DemonGetsCloser.Invoke();
+            
         }
     }
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            _eventsContainers.DemonGetsCloser.Invoke();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
         {
             _eventsContainers.DemonGetsCloser.AddListener(ManageHeartbeatFromCollisionExit);
             _eventsContainers.DemonGetsCloser.Invoke();
             _eventsContainers.DemonGetsCloser.AddListener(ManageHeartbeatFromCollisionEnter);
         }
     }
-
-
 
 }
