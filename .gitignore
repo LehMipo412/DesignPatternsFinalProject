@@ -75,13 +75,18 @@ crashlytics-build.properties
 /TicTaCommand/Logs
 /TicTaCommand/Logs
 /TicTaCommand/Logs
-/Dice Roller/Library
-/Lily's Light/Library
-/Dice Roller/Logs
-/Lily's Light/Logs
 /Solid's Adventure/Library
-/Solid's Adventure/UserSettings
+/Solid's Adventure/Logs
+/TicTaCommand/Logs
+/TicTaCommand/Logs
+/TicTaCommand/Logs
+/Solid's Adventure/Temp
 *.log
-*.settings
+/Solid's Adventure/UserSettings
+/Lily's Light/Library
+/Dice Roller/Library
+/Dice Roller/Temp
 /Dice Roller/UserSettings
 /Lily's Light/UserSettings
+/Lily's Light/UserSettings
+/Lily's Light/Temp

@@ -25,6 +25,12 @@ public class SpriteSwapper : MonoBehaviour
         selectedButton.interactable = false;
     }
 
+    public void MakeTileBlank(int index)
+    {
+        var selectedButton = buttonsContainer.buttonArray[index];
+        selectedButton.image.sprite = default;
+        selectedButton.image.color = Color.gray;
+        selectedButton.interactable = true;
 
-
+    }
 }
